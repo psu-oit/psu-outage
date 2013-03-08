@@ -38,7 +38,7 @@ $filename = "/var/www/html/messages/" . escapeshellcmd( $_SERVER["REQUEST_URI"])
 
 if (file_exists($filename)) {
   $contents = file_get_contents($filename);
-  if ($contents !== FALSE ) {
+  if ($contents != FALSE ) {
     $lines = explode("\n", $contents);
     $h1 = $lines[0];
     $msg = '';
