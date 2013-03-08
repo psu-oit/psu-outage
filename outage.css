@@ -1,0 +1,58 @@
+body.maintenance-page{background-color:#F2F3EE;}
+body.maintenance-page #main{margin-top:0;}
+body.maintenance-page #header{margin-top:50px;height:40px;padding:10px;background-color:#63770e;width:940px;}
+body.maintenance-page #header #logo{padding:0;margin:0;}
+body.maintenance-page #header #logo img{border-right:1px dotted #A0A774;padding-right:8px;}
+body.maintenance-page #header #name-and-slogan{display:inline;}
+body.maintenance-page #header #name-and-slogan h1{display:inline;border:none;}
+body.maintenance-page #main #content{width:940px;padding:10px;float:none;background-color:white;}
+*{margin:0;padding:0;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+fieldset, input, textarea, p, blockquote, th, td{margin:0;padding:0;}
+
+#page p.home-link a,
+#page p.home-link a:link,
+#page p.home-link a:visited{color:#34352b;font-family:Verdana,Geneva,sans-serif;font-size:1em;}
+#header{width:960px;margin:0 auto;position:relative;z-index:1;}
+#site-name{position:absolute;left:200px;color:#E5E6DD;font-family:'SquareSerifBook',Lucida Grande,Lucida Sans Unicode,sans-serif;font-size:1.4em;border-left:1px dotted #a0a774;letter-spacing:0.02em;top:1em;}
+#site-name a{color:#fff;text-decoration:none;}
+#header .site-name-single{padding:34px 0 7px 10px;}
+#header .site-name-double{padding:28px 0 0px 10px;}
+#main{width:960px;margin:0 auto;margin-top:-125px;position:relative;z-index:5;}
+#main .container{background-color:#fff;padding:15px 30px 0px 30px;margin-bottom:0px;}
+#main #content{float:right;width:680px;}
+#page{width:100%;}
+#content,#content #content-inner, .content, .title{margin:20px 0;width:auto;}
+@font-face{font-family:'SquareSerifBook';src:url(http://www.pdx.edu/sites/all/themes/pdx_primary/fonts/book/SquareSerif-Book-webfont.eot);src:local('☺'),
+url(http://www.pdx.edu/sites/all/themes/pdx_primary/fonts/book/SquareSerif-Book-webfont.woff) format('woff'),
+url(http://www.pdx.edu/sites/all/themes/pdx_primary/fonts/book/SquareSerif-Book-webfont.ttf) format('truetype'),
+url(http://www.pdx.edu/sites/all/themes/pdx_primary/fonts/book/SquareSerif-Book-webfont.svg#webfont) format('svg');font-weight:normal;font-style:normal;}
+
+#footer .section{background-color:#566e10;height:30px;line-height:30px;font-size:10px;color:#fff;overflow:hidden;width:100%;position:relative;z-index:0;}
+#footer .section .centerer{width:960px;position:relative;}
+#footer,.breadcrumb,.tabs,.feed-icon,.links{display:none;}
+
+a img{display:block}
+body{margin:0;padding:0;font:12px/1.5em Lucida Grande,
+Lucida Sans Unicode,
+sans-serif;}
+p{margin:0 0 1em 0;}
+hr{border:0;border-bottom:1px dotted #EDEBDF;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{font-family:Verdana,
+Geneva,
+sans-serif;margin:0em 0 0.3em 0;}
+h1,
+h1.title,
+#page-title{font-family:Verdana,
+Geneva,
+sans-serif;font-size:2em;line-height:1.25em;padding:0 0 0.5em;margin:4px 0 5px 0;font-weight:normal;}
+
+h2{font-size:1.5em;line-height:1.7em;}
+h3{font-size:1.2em;line-height:1.4em;}
+h1.title{color:#603417;}
+
