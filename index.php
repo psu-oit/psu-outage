@@ -38,13 +38,16 @@ $filename = "/var/www/html/messages/" . escapeshellcmd( $_SERVER["REQUEST_URI"])
 
 if (file_exists($filename)) {
   $contents = file_get_contents($filename);
-  $lines = explode("\n", $contents);
-  $h1 = $lines[0];
-  $msg = '';
-  for($i=1;$i<count($lines); $i++) {
-    $msg .= "<p>" . $lines[$i] . "</p>";
+  if ($contents !== FALSE ) {
+    $lines = explode("\n", $contents);
+    $h1 = $lines[0];
+    $msg = '';
+    for($i=1;$i<count($lines); $i++) {
+      $msg .= "<p>" . $lines[$i] . "</p>";
+    }
   }
-} ?>
+} 
+?>
 
               <h1 class="title" id="page-title"><?php echo $h1; ?></h1>
               <div id="content-content" class="clearfix">
