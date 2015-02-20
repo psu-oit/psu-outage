@@ -23,7 +23,7 @@ fieldset, input, textarea, p, blockquote, th, td{margin:0;padding:0;}
 #main #content{float:right;width:680px;}
 #page{width:100%;}
 #content,#content #content-inner, .content, .title{margin:20px 0;width:auto;}
-@font-face{font-family:'SquareSerifBook';src:url(http://www.pdx.edu/sites/all/themes/pdx_primary/fonts/book/SquareSerif-Book-webfont.eot);src:local('☺'),
+@font-face{font-family:'SquareSerifBook';src:url(//www.pdx.edu/sites/all/themes/pdx_primary/fonts/book/SquareSerif-Book-webfont.eot);src:local('☺'),
 url(http://www.pdx.edu/sites/all/themes/pdx_primary/fonts/book/SquareSerif-Book-webfont.woff) format('woff'),
 url(http://www.pdx.edu/sites/all/themes/pdx_primary/fonts/book/SquareSerif-Book-webfont.ttf) format('truetype'),
 url(http://www.pdx.edu/sites/all/themes/pdx_primary/fonts/book/SquareSerif-Book-webfont.svg#webfont) format('svg');font-weight:normal;font-style:normal;}
