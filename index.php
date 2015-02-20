@@ -15,7 +15,7 @@
       <div id="header">
         <div id="logo-title">
           <a href="#" title="Home" rel="home" id="logo">
-            <img src="http://www.pdx.edu/sites/all/themes/pdx_primary/logo.png" alt="Home" />
+            <img src="data:image/png;base64,<?php require 'logo.png.base64';?>" alt="Home" />
           </a>
           
           <div id="name-and-slogan">
