@@ -5,7 +5,9 @@
 <head>
   <title>Site under maintenance | Office of Information Technology</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link type="text/css" rel="stylesheet" href="/outage.css" media="all" />
+  <style>
+    <?php include "outage.css"; ?>
+  </style>
 </head>
 
 <body class="maintenance-page in-maintenance no-sidebars">
