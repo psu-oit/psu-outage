@@ -34,6 +34,7 @@
 
 
 $h1 = "Site under maintenance";
+$uri = $_SERVER["HTTPS"] ? "https://" : "http://" .$_SERVER["HTTP_HOST"] . "/" . $_SERVER["REQUEST_URI"];
 $msg = "The web site you are trying to reach is currently down for maintenance. Please try again later.";
 
 $filename = "/var/www/html/messages/" . escapeshellcmd( $_SERVER["REQUEST_URI"]);
@@ -52,6 +53,7 @@ if (file_exists($filename)) {
 ?>
 
               <h1 class="title" id="page-title"><?php echo $h1; ?></h1>
+              <h2><a href="<?php echo $uri;?>"><?php echo $uri;?></a>
               <div id="content-content" class="clearfix">
                 <?php echo $msg; ?> 
               </div> <!-- /content-content -->
