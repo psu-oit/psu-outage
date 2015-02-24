@@ -4,6 +4,7 @@ header("Pragma: no-cache");
 header("x-outage: true");
 
 $h1 = "Site under maintenance";
+$host = (array_key_exists('HTTP_HOST', $_SERVER)) ? $_SERVER['HTTP_HOST'] : 'outage.pdx.edu';
 $msg = "The web site you are trying to reach is currently down for maintenance. Please try again later.";
 $pages = array(
   '/dev\.banner\.pdx\.edu/'      => 'devel-banner',
@@ -15,7 +16,7 @@ $pages = array(
 );
 
 foreach ($pages as $expr => $filename) {
-  $ret = preg_match($expr, $_SERVER["HTTP_HOST"]);
+  $ret = preg_match($expr, $host);
   if ($ret === 1) {
     $msgpath = "/var/www/html/messages/" . $filename;
     break;
@@ -33,7 +34,7 @@ if (file_exists($filename)) {
     }
   }
 } else {
-  error_log("No message found for service " . $_SERVER["HTTP_HOST"] . ".");
+  error_log("No message found for service ${host}.");
 }
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
