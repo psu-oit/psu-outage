@@ -23,8 +23,8 @@ foreach ($pages as $expr => $filename) {
   }
 }
 
-if (file_exists($filename)) {
-  $contents = file_get_contents($filename);
+if (file_exists($msgpath)) {
+  $contents = file_get_contents($msgpath);
   if ($contents != FALSE ) {
     $lines = explode("\n", $contents);
     $h1 = $lines[0];
