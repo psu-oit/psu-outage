@@ -1,4 +1,5 @@
 <?php
+header('HTTP/1.1 503 Service Temporarily Unavailable');
 header("Cache-Control: max-age=0, no-cache, no-store");
 header("Pragma: no-cache");
 header("x-outage: true");
