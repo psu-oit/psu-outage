@@ -16,6 +16,8 @@ $pages = array(
   '/outage\.pdx\.edu/'           => 'outage'
 );
 
+$msgpath = "/var/www/html/messages/outage";
+
 foreach ($pages as $expr => $filename) {
   $ret = preg_match($expr, $host);
   if ($ret === 1) {
